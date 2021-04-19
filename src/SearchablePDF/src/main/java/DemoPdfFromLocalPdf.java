@@ -13,7 +13,7 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DemoPdfFromLocalPdf {
+public class DemoPdfFromLocalPdf implements OcrProcessor {
 
     private List<TextLine> extractText(ByteBuffer imageBytes){
 

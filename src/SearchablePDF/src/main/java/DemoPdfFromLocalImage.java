@@ -12,7 +12,7 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DemoPdfFromLocalImage {
+public class DemoPdfFromLocalImage implements OcrProcessor {
 
     public void run(String documentName, String outputDocumentName) throws IOException {
 
