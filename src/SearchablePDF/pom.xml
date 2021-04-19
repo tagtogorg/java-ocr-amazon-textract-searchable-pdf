@@ -6,7 +6,7 @@
 
     <groupId>com.amazon.textract.solutions</groupId>
     <artifactId>searchable-pdf</artifactId>
-    <version>1.0</version>
+    <version>1.1.0+tagtog</version>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-textract -->
         <dependency>
