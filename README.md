@@ -38,4 +38,4 @@ time ./run.sh tagtog FUNSD-OCRed testing_data ~/Downloads/dataset/testing_data/ 
 time ./run.sh tagtog FUNSD-OCRed training_data ~/Downloads/dataset/training_data/  # took around ~6m; 149 docs in total
 ```
 
-
+[These are some sample annotated documents in tagtog](https://www.tagtog.net/tagtog/FUNSD-OCRed/-search/entity%3ASampleEntity1%3A*).
