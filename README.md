@@ -1,6 +1,6 @@
 This sample repository shows how to use an external OCR provider (in this case [Amazon Textract](https://aws.amazon.com/textract/)) and upload the resulting PDFs into [tagtog](https://tagtog.net). The code is written in Java (11).
 
-<img width="300" alt="Screen Shot 2021-04-20 at 18 54 03" src="https://user-images.githubusercontent.com/102431/115435303-fbedc080-a209-11eb-98f8-fdf18e4b928d.png">
+<img width="500" alt="Screen Shot 2021-04-20 at 18 54 03" src="https://user-images.githubusercontent.com/102431/115435303-fbedc080-a209-11eb-98f8-fdf18e4b928d.png">
 
 This code starts from an [Amazon Textract Tutorial](https://aws.amazon.com/blogs/machine-learning/generating-searchable-pdfs-from-scanned-documents-automatically-with-amazon-textract/) ([original code](https://github.com/aws-samples/amazon-textract-searchable-pdf)) to OCR input files (PDFs or images) and converting them into "searchable PDFs" (i.e. PDFs with embedded text). These "searchable PDFs" are exactly what we want to upload to tagtog to then annotate them using [tagtog Native PDF](https://docs.tagtog.net/pdf-annotation-tool.html).
 
