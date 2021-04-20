@@ -34,7 +34,7 @@ time ./run.sh MY_TAGTOG_OWNERNAME MY_TAGTOG_PROJECT MY_TAGTOG_FOLDER ...inputFil
 ```
 
 
-# Example Project
+## 🍃 Sample tagtog Project
 
 Using this very same code, we OCR'ed the [FUNSD dataset](https://guillaumejaume.github.io/FUNSD/) and uploaded the results into the tagtog sample project [tagtog/FUNSD-OCRed](https://www.tagtog.net/tagtog/FUNSD-OCRed/pool) 😃.
 
@@ -46,3 +46,8 @@ time ./run.sh tagtog FUNSD-OCRed training_data ~/Downloads/dataset/training_data
 ```
 
 [These are some sample annotated documents in tagtog](https://www.tagtog.net/tagtog/FUNSD-OCRed/-search/entity%3ASampleEntity1%3A*).
+
+
+## Notes
+
+The [original demo code](https://github.com/aws-samples/amazon-textract-searchable-pdf/raw/master/src/SearchablePDF/documents/SampleOutput.pdf) tends to create oversized PDFs and to write the embedded character offsets a little bit below the actual (visual) positions. These details can be tweaked and of course depend on the used OCR software.
