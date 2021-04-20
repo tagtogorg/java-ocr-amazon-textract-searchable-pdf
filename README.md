@@ -6,7 +6,12 @@ This code starts from an [Amazon Textract Tutorial](https://aws.amazon.com/blogs
 
 This respository adds additional utilities (e.g. traversing & processing recursively given directories) and using the [tagtog Documents APIs](https://docs.tagtog.net/API_documents_v1.html) to upload the results to a given tagtog project. Http requests are done with java, [Apache HttpClient (4.5)](https://hc.apache.org/httpcomponents-client-4.5.x/index.html).
 
-The main entry point is [DemoTagtogOcr.java](https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf/blob/master/src/SearchablePDF/src/main/java/DemoTagtogOcr.java#L101).
+The main entry point is [DemoTagtogOcr.java](https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf/blob/master/src/SearchablePDF/src/main/java/DemoTagtogOcr.java#L101). The main ingredients of the code are 3:
+
+1. [Call Amazon Textract API](https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf/blob/master/src/SearchablePDF/src/main/java/DemoPdfFromLocalPdf.java#L18)
+2. [Translating the JSON output from Amazon Textract into a "searchable PDF" with java pdfbox](https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf/blob/master/src/SearchablePDF/src/main/java/DemoPdfFromLocalPdf.java#L45)
+3. [Call the tagtog API to upload documents](https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf/blob/master/src/SearchablePDF/src/main/java/DemoTagtogOcr.java#L161)
+
 
 ## Compile
 
