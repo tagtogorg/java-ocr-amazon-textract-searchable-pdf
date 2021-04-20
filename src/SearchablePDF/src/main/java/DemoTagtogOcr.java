@@ -103,7 +103,7 @@ public class DemoTagtogOcr {
         try {
             outputTmpFile = doOcr(inputPath.toString()); // Hardcode path if needed when testing
 
-            uploadToTagtog(outputTmpFile, inputPath.getFileName().toString());
+            uploadToTagtog(outputTmpFile, maybeAddPdfExtension(inputPath));
 
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -132,6 +132,21 @@ public class DemoTagtogOcr {
 
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     * Add ".pdf" extension to non PDF files (e.g. images like .png).
+     *
+     * @param inputPath
+     * @return
+     */
+    public static String maybeAddPdfExtension(Path inputPath) {
+        String inputFilename = inputPath.getFileName().toString();
+        String ext = getLowercasedExtension(inputFilename);
+        if (ext != "pdf") {
+            inputFilename += ".pdf";
+        }
+        return inputFilename;
     }
 
     /**
