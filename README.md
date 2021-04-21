@@ -51,7 +51,7 @@ In short, what you need is:
 
 ## 🍃 Sample tagtog Project
 
-Using this very same code, we OCR'ed the [FUNSD dataset](https://guillaumejaume.github.io/FUNSD/) and uploaded the results into the tagtog sample project [tagtog/FUNSD-OCRed](https://www.tagtog.net/tagtog/FUNSD-OCRed/pool) 😃.
+Using this very same code, we OCR'ed the [FUNSD dataset](https://guillaumejaume.github.io/FUNSD/) and uploaded the results into the tagtog public project: [tagtog/FUNSD-OCRed](https://www.tagtog.net/tagtog/FUNSD-OCRed/pool) 😃.
 
 We exactly ran (last update on 2021-04-20):
 
