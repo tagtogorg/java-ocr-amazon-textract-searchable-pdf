@@ -1,4 +1,9 @@
-This sample repository shows how to use an external OCR provider (in this case [Amazon Textract](https://aws.amazon.com/textract/)) and upload the resulting PDFs into [tagtog](https://tagtog.net). The code is written in Java (11).
+This is a fully-functioning sample repository showing:
+
+1. how to use an external OCR provider (in this case [Amazon Textract](https://aws.amazon.com/textract/))
+2. upload the resulting PDFs into [tagtog](https://tagtog.net).
+
+The code is written in Java (11).
 
 <img width="500" alt="Screen Shot 2021-04-20 at 18 54 03" src="https://user-images.githubusercontent.com/102431/115435303-fbedc080-a209-11eb-98f8-fdf18e4b928d.png">
 
