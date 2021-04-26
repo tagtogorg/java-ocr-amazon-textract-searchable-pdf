@@ -18,7 +18,7 @@ The main entry point is [DemoTagtogOcr.java](https://github.com/tagtog/java-ocr-
 3. [Call the tagtog API to upload documents](https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf/blob/master/src/SearchablePDF/src/main/java/DemoTagtogOcr.java#L161)
 
 
-## Compile
+## 🧱 Compile
 
 ```shell
 git clone https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf.git
@@ -27,7 +27,7 @@ cd java-ocr-amazon-textract-searchable-pdf/src/SearchablePDF/
 ./compile.sh
 ```
 
-## Run
+## ⚡️ Run
 
 ```shell
 # Set your tagtog credentials
@@ -39,7 +39,7 @@ time ./run.sh MY_TAGTOG_OWNERNAME MY_TAGTOG_PROJECT MY_TAGTOG_FOLDER ...inputFil
 ```
 
 
-## Setup Amazon Textract
+## 🤓 Setup Amazon Textract
 
 If you are new to AWS or unsure about the details, [this is the complete AWS guide to get started with Amazon Textract](https://docs.aws.amazon.com/textract/latest/dg/getting-started.html).
 
