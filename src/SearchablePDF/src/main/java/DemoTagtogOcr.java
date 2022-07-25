@@ -37,7 +37,7 @@ import org.apache.http.util.EntityUtils;
 public class DemoTagtogOcr {
 
     private static final String TAGTOG_DOMAIN = Optional.ofNullable(System.getenv("TAGTOG_DOMAIN"))
-            .orElse("https://tagtog.net");
+            .orElse("https://www.tagtog.com");
     private static final String TAGTOG_USERNAME = Optional.ofNullable(System.getenv("TAGTOG_USERNAME"))
             .orElseThrow(() -> new IllegalArgumentException("You must define the envar: TAGTOG_USERNAME"));
     private static final String TAGTOG_PASSWORD = Optional.ofNullable(System.getenv("TAGTOG_PASSWORD"))
