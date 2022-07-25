@@ -1,15 +1,15 @@
 This is a fully-functioning sample repository showing:
 
 1. how to use an external OCR provider (in this case [Amazon Textract](https://aws.amazon.com/textract/)).
-2. upload the resulting PDFs into [tagtog](https://tagtog.net).
+2. upload the resulting PDFs into [tagtog.com](https://tagtog.com).
 
 The code is written in Java (11).
 
 <img width="500" alt="Screen Shot 2021-04-20 at 18 54 03" src="https://user-images.githubusercontent.com/102431/115435303-fbedc080-a209-11eb-98f8-fdf18e4b928d.png">
 
-This code starts from an [Amazon Textract Tutorial](https://aws.amazon.com/blogs/machine-learning/generating-searchable-pdfs-from-scanned-documents-automatically-with-amazon-textract/) ([original code](https://github.com/aws-samples/amazon-textract-searchable-pdf)) to OCR input files (PDFs or images) and convert them into "searchable PDFs" (i.e. PDFs with embedded text). These "searchable PDFs" are exactly what we want to upload to tagtog to then annotate them using [tagtog Native PDF](https://docs.tagtog.net/pdf-annotation-tool.html).
+This code starts from an [Amazon Textract Tutorial](https://aws.amazon.com/blogs/machine-learning/generating-searchable-pdfs-from-scanned-documents-automatically-with-amazon-textract/) ([original code](https://github.com/aws-samples/amazon-textract-searchable-pdf)) to OCR input files (PDFs or images) and convert them into "searchable PDFs" (i.e. PDFs with embedded text). These "searchable PDFs" are exactly what we want to upload to tagtog to then annotate them using [tagtog Native PDF](https://docs.tagtog.com/pdf-annotation-tool.html).
 
-This respository adds additional utilities (e.g. traversing & processing recursively given directories) and using the [tagtog Documents APIs](https://docs.tagtog.net/API_documents_v1.html) to upload the results to a given tagtog project. Http requests are done with java, [Apache HttpClient (4.5)](https://hc.apache.org/httpcomponents-client-4.5.x/index.html).
+This respository adds additional utilities (e.g. traversing & processing recursively given directories) and using the [tagtog Documents APIs](https://docs.tagtog.com/API_documents_v1.html) to upload the results to a given tagtog project. Http requests are done with java, [Apache HttpClient (4.5)](https://hc.apache.org/httpcomponents-client-4.5.x/index.html).
 
 The main entry point is [DemoTagtogOcr.java](https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf/blob/master/src/SearchablePDF/src/main/java/DemoTagtogOcr.java#L101). The main ingredients of the code are 3:
 
@@ -21,7 +21,7 @@ The main entry point is [DemoTagtogOcr.java](https://github.com/tagtog/java-ocr-
 ## 🧱 Compile
 
 ```shell
-git clone https://github.com/tagtog/java-ocr-amazon-textract-searchable-pdf.git
+git clone https://github.com/tagtogorg/java-ocr-amazon-textract-searchable-pdf.git
 cd java-ocr-amazon-textract-searchable-pdf/src/SearchablePDF/
 
 ./compile.sh
@@ -51,7 +51,7 @@ In short, what you need is:
 
 ## 🍃 Sample tagtog Project
 
-Using this very same code, we OCR'ed the [FUNSD dataset](https://guillaumejaume.github.io/FUNSD/) and uploaded the results into the tagtog public project: [tagtog/FUNSD-OCRed](https://www.tagtog.net/tagtog/FUNSD-OCRed/pool) 😃.
+Using this very same code, we OCR'ed the [FUNSD dataset](https://guillaumejaume.github.io/FUNSD/) and uploaded the results into the tagtog public project: [tagtog/FUNSD-OCRed](https://www.tagtog.com/tagtog/FUNSD-OCRed/pool) 😃.
 
 We exactly ran (last update on 2021-04-20):
 
@@ -60,7 +60,7 @@ time ./run.sh tagtog FUNSD-OCRed testing_data ~/Downloads/dataset/testing_data/ 
 time ./run.sh tagtog FUNSD-OCRed training_data ~/Downloads/dataset/training_data/  # took around ~6m; 149 docs in total
 ```
 
-[These are some sample annotated documents in tagtog](https://www.tagtog.net/tagtog/FUNSD-OCRed/-search/entity%3ASampleEntity1%3A*).
+[These are some sample annotated documents in tagtog](https://www.tagtog.com/tagtog/FUNSD-OCRed/-search/entity%3ASampleEntity1%3A*).
 
 
 ## Notes
